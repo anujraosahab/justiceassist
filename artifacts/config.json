@@ -15,7 +15,7 @@
         "semantic-cache": "semantic-cache-001"
     },
     "LAWS-COLLECTION-NAME": "law_data-002",
-    "MONGODB": "nyaynidhi",
+    "MONGODB": "JusticeAssist",
     "DEVGAN_LAW_LINKS": {
         "ipc": "https://devgan.in/all_sections_ipc.php",
         "crpc": "https://devgan.in/all_sections_crpc.php",

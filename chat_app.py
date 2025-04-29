@@ -6,11 +6,11 @@ from dotenv import load_dotenv
 from qdrant_client import QdrantClient 
 
 load_dotenv()
-gemini_api_key = st.secrets["GEMINI_API_KEY"]
-groq_api_key = st.secrets['GROQ_API_KEY']
-qdrant_url = st.secrets['QDRANT_URI']
-qdrant_cloud_url = st.secrets["QDRANT_CLOUD_URL"]
-qdrant_cloud_api_key = st.secrets["QDRANT_CLOUD_API_KEY"]
+gemini_api_key = st.secrets["gemini_api_key"]
+groq_api_key = st.secrets['groq_api_key']
+qdrant_url = st.secrets['qdrant_url']
+qdrant_cloud_url = st.secrets["qdrant_cloud_url"]
+qdrant_cloud_api_key = st.secrets["qdrant_cloud_api_key"]
 
 # os.environ["LANGCHAIN_API_KEY"] = os.getenv["LANGCHAIN_API_KEY"]
 # os.environ["LANGCHAIN_TRACING_V2"] = "true"
@@ -18,7 +18,7 @@ qdrant_cloud_api_key = st.secrets["QDRANT_CLOUD_API_KEY"]
 
 def chat_ui():
 
-    st.set_page_config(page_title='NyayNidhi', page_icon='⚖️', layout='wide')
+    st.set_page_config(page_title='JusticeAssist', page_icon='⚖️', layout='wide')
     st.markdown(
     """
     <style>
@@ -31,10 +31,10 @@ def chat_ui():
     """,
     unsafe_allow_html=True
     )
-    st.title("NyayNidhi.AI")
+    st.title("JusticeAssist.AI")
     st.markdown("*v0.0.1 beta*  [Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSfrbTdAxQ3zQvH2M5k-HD9huWZht7rp51sS6_AYBS1h1oaGIQ/viewform?usp=sf_link)")
     st.markdown("**Llama3.2 by Groq**")
-    st.warning("NyayNidhi can make mistakes. Verify responses before any action.")
+    st.warning("JusticeAssist can make mistakes. Verify responses before any action.")
     
     # Streamlit Sidebar with Example Queries
     st.sidebar.title("Example Queries to Try")
@@ -83,7 +83,7 @@ def chat_ui():
                 st.markdown(response)
         
     except Exception as e:
-        st.error("Something went wrong! NyayNidhi can't work at this time.")
+        st.error("Something went wrong! JusticeAssist can't work at this time.")
         print(e)
 
 if __name__ == '__main__':
