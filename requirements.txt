@@ -1,0 +1,15 @@
+ langchain 
+ langchain-groq 
+ langchain-google-genai 
+ streamlit 
+ fastapi 
+ uvicorn 
+ ragas 
+ qdrant-client
+ python-dotenv
+ duckduckgo-search
+ langchain-community
+ wikibase-rest-api-client 
+ mediawikiapi
+ langchain-qdrant
+hvac
